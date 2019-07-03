@@ -28,12 +28,15 @@ gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
 console.log("gem4 : " + gem4)
 
 
+    
+
 
 //  done Random generated cpu number
 //  done console log
 //  done link to html
 
-//Random generate number for each crystal 
+//  done Random generate number for each crystal
+//  connect  
 // assign on click 
 //console log 
 //link to image
@@ -51,6 +54,10 @@ console.log("gem4 : " + gem4)
 // if crystal numbers total are more the cpu number 
 // add loss
    // reset game *keep losses total 
+
+
+// QUESTIONS
+// DO I NEED TO CITE IMAGES??
 
 
 

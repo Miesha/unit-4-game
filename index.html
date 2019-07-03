@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" type="text/css" href="assets/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
@@ -16,42 +17,60 @@
 
 <body>
 
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h1> Crystals Collector </h1>
+    </nav>
+</div>
+
+
+<br>
+
+
     
-
-<h1> Crystals Collector !</h1>
-
-<div id="Scores">
-        <p id="Wins">Wins :</p>
-        <p id="Losses">Losses :</p>
+<div class="container px-lg-5">
+    <div class="row mx-lg-n5">
+        <div class="col py-3 px-lg-5 border bg-light">Wins : </div>
+        <div class="col py-3 px-lg-5 border bg-light">Losses : </div>
     </div>
+</div>
 
-<div id="instructions">
-        <p>You will be shown a random number at the start of the game.</p>
 
-        <p> There are four crystals below. By clicking on a crystal you will 
-            add a specific amount of points to your total score. 
-        </p> 
+<br>
 
-        <p>You win the game by maching your total score to the random
-           number. You lose the game if your total score goes above the 
-           random number. 
+
+<div class="card w-75">
+    <div class="card-body">
+        <h5 class="card-title">Instructions</h5>
+        <p class="card-text">
+            <p>You will be shown a random number at the start of the game.</p>
+            <p> There are four crystals below. By clicking on a crystal you will 
+                    add a specific amount of points to your total score. 
+            </p> 
+            <p>You win the game by maching your total score to the random
+                    number. You lose the game if your total score goes above the 
+                    random number. 
+            </p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the value of the crystal. </p>
         </p>
-
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        
-        <p>Each time when the game starts, the game will change the value of the crystal. </p>
-
+        <div id="gems">
+            <img src="images/Amethyst_02.jpg" class="btn btn-primary"></a>
+            <img src="images/blue.jpg" class="btn btn-primary"></a>
+            <img src="images/amethyst-1.jpg" class="btn btn-primary"></a>
+            <img src="images/diamond.jpg" class="btn btn-primary"></a>
+        </div>
+        <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+                <div id="targetNum" class="col py-3 px-lg-5 border bg-light">Computer Number : </div>
+                <div id="playerTotal" class="col py-3 px-lg-5 border bg-light">Your Total : </div>
+            </div>
+        </div>
+    </div>
 </div>
+              
+             
 
-
-<div id="targetNum"></div>
-
-<div id="playerNum"></div>
-
-<div id="crystals">
-
-
-</div>
 
 <script type="text/javascript" src ="assets/game.js">
 
