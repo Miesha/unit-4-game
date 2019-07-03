@@ -58,6 +58,8 @@ console.log("gem4 : " + gem4)
 
 // QUESTIONS
 // DO I NEED TO CITE IMAGES??
+// How do I change the body's background image ? 
+
 
 
 

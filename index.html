@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
         
 </head>
 
-<body>
+<body id="body_look">
 
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,16 +38,16 @@
 
 <br>
 
-
-<div class="card w-75">
+<div id="main_content">
+    <div class="card w-75">
     <div class="card-body">
         <h5 class="card-title">Instructions</h5>
         <p class="card-text">
-            <p>You will be shown a random number at the start of the game.</p>
+            <p>You will be shown a target number at the start of the game.</p>
             <p> There are four crystals below. By clicking on a crystal you will 
                     add a specific amount of points to your total score. 
             </p> 
-            <p>You win the game by maching your total score to the random
+            <p>You win the game by maching your total score to the target
                     number. You lose the game if your total score goes above the 
                     random number. 
             </p>
@@ -62,13 +62,13 @@
         </div>
         <div class="container px-lg-5">
             <div class="row mx-lg-n5">
-                <div id="targetNum" class="col py-3 px-lg-5 border bg-light">Computer Number : </div>
+                <div id="targetNum" class="col py-3 px-lg-5 border bg-light">Target Number : </div>
                 <div id="playerTotal" class="col py-3 px-lg-5 border bg-light">Your Total : </div>
             </div>
         </div>
     </div>
 </div>
-              
+</div>        
              
 
 

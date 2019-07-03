@@ -1,12 +1,20 @@
 
 img {
-    background-color: aqua;
     width: 176px; 
     height: 127px;
-    
+
+} 
+
+#body_look {
+    background-color: blueviolet;
 }
 
-html {
-    background-color: blueviolet;
+#main_content {
+ 
+margin-left: 20%;
+}
+
+.card-body {
+    background-color: darksalmon;
 }
 
