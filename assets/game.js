@@ -28,6 +28,44 @@ gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
 console.log("gem4 : " + gem4)
 
 
+$('#gem1').on('click', function(){
+    console.log('gem1: '+ gem1);
+
+})
+
+$('#gem2').on('click', function(){
+    console.log('gem2: '+ gem2);
+
+})
+
+$('#gem3').on('click', function(){
+    console.log('gem3: '+ gem3);
+
+})
+
+$('#gem4').on('click', function(){
+    console.log('gem4: '+ gem4);
+
+})
+
+
+function addgems (val) {
+
+}
+
+
+
+
+
+// var gem1 = document.getElementById("gem1");
+
+    // $(".btn btn-primary").click(function(){
+    //     $(this).val(gem1)
+    //     console.log("button: " + gem1)
+    // })
+
+
+
     
 
 
@@ -36,10 +74,9 @@ console.log("gem4 : " + gem4)
 //  done link to html
 
 //  done Random generate number for each crystal
-//  connect  
-// assign on click 
-//console log 
-//link to image
+//  done crystals to on click
+//  done console log 
+//  done link to image
 
 // on click add 
 //Add crystal numbers to total score
