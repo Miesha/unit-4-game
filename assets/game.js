@@ -13,13 +13,14 @@ var losses = 0;
 var totalScore =[];
 
 
+
 document.getElementById("wins").innerHTML = wins;
     console.log(wins)
 
 document.getElementById("losses").innerHTML = losses;
     console.log(losses)
 
-var computerGuess=(Math.floor(Math.random() * ((120 - 19) + 1)) + 19)
+computerGuess=(Math.floor(Math.random() * ((120 - 19) + 1)) + 19)
 console.log("computerGuess : " +  computerGuess)
 
     document.getElementById("computerGuess").innerHTML = computerGuess;
@@ -41,7 +42,16 @@ gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
 
     
 
-
+  function reset() {
+    // reset letter or userGuess
+    // 
+    totalScore = []
+    document.getElementById("yourGuess").innerHTML = totalScore;
+    computerGuess = (Math.floor(Math.random() * ((120 - 19) + 1)) + 19)
+    document.getElementById("computerGuess").innerHTML = computerGuess;
+        console.log("resetCPUguess:" + computerGuess)
+    
+  }
 
 
 
@@ -82,9 +92,6 @@ $('#gem4').on('click', function(){
         console.log("gem4 : " + gem4);
     totalScore.push(gem4)
         // console.log (totalScore + "this is the new score")
-
-        var crystalTotal = [...totalScore];
-        console.log(crystalTotal + "cs")
           
 
 })
@@ -103,6 +110,7 @@ $('#gems').on("click", function(){
         wins++;
         document.getElementById("wins").innerHTML = wins;
             console.log("wins:" + wins);
+            reset();
     }
 
     else if (sum > computerGuess) {
@@ -111,6 +119,7 @@ $('#gems').on("click", function(){
         losses++;
         document.getElementById("losses").innerHTML = losses;         
             console.log("losses  : " + losses);
+            reset();
 
     
 
