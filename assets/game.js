@@ -95,8 +95,10 @@ $('#gems').on("click", function(){
    var sum = 0;
    for (var i = 0; i < numbers.length; i++){
     sum += numbers[i]
-    console.log("please work:" + sum)
+       console.log("please work:" + sum)
+    document.getElementById("yourGuess").innerHTML = sum;
 
+    
     
    }
 
