@@ -47,9 +47,22 @@ gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
     // 
     totalScore = []
     document.getElementById("yourGuess").innerHTML = totalScore;
+
     computerGuess = (Math.floor(Math.random() * ((120 - 19) + 1)) + 19)
     document.getElementById("computerGuess").innerHTML = computerGuess;
         console.log("resetCPUguess:" + computerGuess)
+
+    gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 6)
+        console.log("gem1 : " + gem1)
+
+    gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 5)
+        console.log("gem2 : " + gem2)
+
+    gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 3)
+        console.log("gem3 : " + gem3)
+
+    gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 2)
+        console.log("gem4 : " + gem4)    
     
   }
 
