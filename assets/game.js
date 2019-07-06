@@ -28,23 +28,22 @@ console.log("computerGuess : " +  computerGuess)
 
 
 
-gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 5)
+gem1=(Math.floor(Math.random() * ((12 - 6) + 1)) + 6)
  console.log("gem1 : " + gem1)
 
-gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 4)
+gem2=(Math.floor(Math.random() * ((12 - 5) + 1)) + 5)
   console.log("gem2 : " + gem2)
 
-gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 2)
+gem3=(Math.floor(Math.random() * ((12 - 4) + 1)) + 4)
   console.log("gem3 : " + gem3)
 
-gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
+gem4=(Math.floor(Math.random() * ((12 - 1) + 1)) + 1)
   console.log("gem4 : " + gem4)
 
     
 
   function reset() {
-    // reset letter or userGuess
-    // 
+    
     totalScore = []
     document.getElementById("yourGuess").innerHTML = totalScore;
 
@@ -52,16 +51,16 @@ gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
     document.getElementById("computerGuess").innerHTML = computerGuess;
         console.log("resetCPUguess:" + computerGuess)
 
-    gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 6)
+    gem1=(Math.floor(Math.random() * ((12 - 5) + 1)) + 5)
         console.log("gem1 : " + gem1)
 
-    gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 5)
+    gem2=(Math.floor(Math.random() * ((12 - 4) + 1)) + 4)
         console.log("gem2 : " + gem2)
 
-    gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 3)
+    gem3=(Math.floor(Math.random() * ((12 - 2) + 1)) + 2)
         console.log("gem3 : " + gem3)
 
-    gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 2)
+    gem4=(Math.floor(Math.random() * ((12 - 1) + 1)) + 1)
         console.log("gem4 : " + gem4)    
     
   }
@@ -70,9 +69,7 @@ gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
 
 
 $('#gem1').on('click', function(){
-
-    // gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 5)
-        console.log("gem1 : " + gem1);
+          console.log("gem1 : " + gem1);
     
     totalScore.push(gem1)
         // console.log (totalScore + "this is the new score")
@@ -81,8 +78,6 @@ $('#gem1').on('click', function(){
 })
 
 $('#gem2').on('click', function(){
-
-    // gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 4)
         console.log("gem2 : " + gem2);
 
     totalScore.push(gem2)
@@ -90,8 +85,6 @@ $('#gem2').on('click', function(){
 })
 
 $('#gem3').on('click', function(){
-
-    // gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 2)
         console.log("gem3 : " + gem3);
 
     totalScore.push(gem3)
@@ -100,8 +93,6 @@ $('#gem3').on('click', function(){
 })
 
 $('#gem4').on('click', function(){
-
-    // gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
         console.log("gem4 : " + gem4);
     totalScore.push(gem4)
         // console.log (totalScore + "this is the new score")
@@ -115,11 +106,11 @@ $('#gems').on("click", function(){
    var sum = 0;
    for (var i = 0; i < numbers.length; i++){
     sum += numbers[i]
-       console.log("please work:" + sum);
+    // console.log("please work:" + sum);
     document.getElementById("yourGuess").innerHTML = sum;
 
     if (sum === computerGuess ) {
-        alert( "You successully completed the crystal challenge!");
+        alert( "Your total is " + sum + ". You successully completed the crystal challenge!");
         wins++;
         document.getElementById("wins").innerHTML = wins;
             console.log("wins:" + wins);
@@ -134,47 +125,12 @@ $('#gems').on("click", function(){
             console.log("losses  : " + losses);
             reset();
 
-    
-
-    
-    
-   }
-
-
      
-    
+   }
     
 }
 })
-// var numbers = [10, 20, 30, 40] // sums to 100
-// var sum = 0;
-// for (var i = 0; i < numbers.length; i++) {
-//   sum += numbers[i]
-// }
- 
-// myVar = doStuff(5);  
-// console.log(myVar); // logs 27.5
 
-// function doStuff(int) {  
-//   var myNumber = int;
-//   var halfNumber = myNumber / 2
-//   myNumber = halfNumber + myNumber * 3;
-//   myNumber += 10;
-//   return myNumber;
-// }
-
-
-    
- 
-
-
-
-// var total = 0;
-//     for (var i = 0; i < totalScore.length; i++) {
-//     total += totalScore[i] << 0;
-//     console.log("total :"  + total)
-
-// }
 
 
 //  done Random generated cpu number
@@ -201,16 +157,13 @@ $('#gems').on("click", function(){
    // each time this click even happens
 //    // the crystal totals score should add the value of the crystal clicked. 
 
- 
-
-
-// done if crystal number matches cpu number 
+ // done if crystal number matches cpu number 
 // done add win
-   // reset game
+// done reset game
 
 // done if crystal numbers total are more the cpu number 
 // done add loss
-   // reset game *keep losses total 
+// done reset game *keep losses total 
 
 
 // QUESTIONS
