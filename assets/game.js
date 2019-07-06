@@ -102,8 +102,19 @@ $('#gems').on("click", function(){
         alert( "You successully completed the crystal challenge!");
         wins++;
         document.getElementById("wins").innerHTML = wins;
-        console.log("wins:" + wins);
+            console.log("wins:" + wins);
     }
+
+    else if (sum > computerGuess) {
+        
+        alert( "Sorry " + sum + " is more than " + computerGuess + ". You have failed this challenge, try again.")
+        losses++;
+        document.getElementById("losses").innerHTML = losses;         
+            console.log("losses  : " + losses);
+
+    
+
+    
     
    }
 
@@ -111,6 +122,7 @@ $('#gems').on("click", function(){
      
     
     
+}
 })
 // var numbers = [10, 20, 30, 40] // sums to 100
 // var sum = 0;
@@ -170,12 +182,12 @@ $('#gems').on("click", function(){
  
 
 
-// if crystal number matches cpu number 
-// add win
+// done if crystal number matches cpu number 
+// done add win
    // reset game
 
-// if crystal numbers total are more the cpu number 
-// add loss
+// done if crystal numbers total are more the cpu number 
+// done add loss
    // reset game *keep losses total 
 
 
