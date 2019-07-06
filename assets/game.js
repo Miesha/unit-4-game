@@ -27,17 +27,17 @@ console.log("computerGuess : " +  computerGuess)
 
 
 
-// gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 5)
-// console.log("gem1 : " + gem1)
+gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 5)
+ console.log("gem1 : " + gem1)
 
-// gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 4)
-// console.log("gem2 : " + gem2)
+gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 4)
+  console.log("gem2 : " + gem2)
 
-// gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 2)
-// console.log("gem3 : " + gem3)
+gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 2)
+  console.log("gem3 : " + gem3)
 
-// gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
-// console.log("gem4 : " + gem4)
+gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
+  console.log("gem4 : " + gem4)
 
     
 
@@ -48,8 +48,8 @@ console.log("computerGuess : " +  computerGuess)
 
 $('#gem1').on('click', function(){
 
-    gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 5)
-        console.log("gem1 : " + gem1)
+    // gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 5)
+        console.log("gem1 : " + gem1);
     
     totalScore.push(gem1)
         // console.log (totalScore + "this is the new score")
@@ -59,8 +59,8 @@ $('#gem1').on('click', function(){
 
 $('#gem2').on('click', function(){
 
-    gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 4)
-        console.log("gem2 : " + gem2)
+    // gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 4)
+        console.log("gem2 : " + gem2);
 
     totalScore.push(gem2)
         // console.log (totalScore + "this is the new score")
@@ -68,8 +68,8 @@ $('#gem2').on('click', function(){
 
 $('#gem3').on('click', function(){
 
-    gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 2)
-        console.log("gem3 : " + gem3)
+    // gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 2)
+        console.log("gem3 : " + gem3);
 
     totalScore.push(gem3)
         // console.log (totalScore + "this is the new score")
@@ -78,8 +78,8 @@ $('#gem3').on('click', function(){
 
 $('#gem4').on('click', function(){
 
-    gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
-        console.log("gem4 : " + gem4)
+    // gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
+        console.log("gem4 : " + gem4);
     totalScore.push(gem4)
         // console.log (totalScore + "this is the new score")
 
@@ -95,10 +95,15 @@ $('#gems').on("click", function(){
    var sum = 0;
    for (var i = 0; i < numbers.length; i++){
     sum += numbers[i]
-       console.log("please work:" + sum)
+       console.log("please work:" + sum);
     document.getElementById("yourGuess").innerHTML = sum;
 
-    
+    if (sum === computerGuess ) {
+        alert( "You successully completed the crystal challenge!");
+        wins++;
+        document.getElementById("wins").innerHTML = wins;
+        console.log("wins:" + wins);
+    }
     
    }
 
@@ -150,8 +155,10 @@ $('#gems').on("click", function(){
 // done on click add 
 // done Add crystal numbers to total score
 // done console log 
-// display total score
-   // i need a function 
+// done display total score
+   // DONE - SOMEHOW I GOT ALL OF THIS BELOW COMPLETED:
+   /// REFERENCE LINES 92 -99
+   //i need a function 
             // function
    // in that function i want 
             // function addCrystal (val){ }
