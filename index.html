@@ -15,6 +15,8 @@
 </head>
 
 <body id="body_look">
+        
+
 
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,14 +25,14 @@
 </div>
 
 
-<br>
 
+<br>
 
     
 <div class="container px-lg-5">
     <div class="row mx-lg-n5">
-        <div class="col py-3 px-lg-5 border bg-light">Wins : </div>
-        <div class="col py-3 px-lg-5 border bg-light">Losses : </div>
+        <div class="col py-3 px-lg-5 border bg-light">Wins : <span id="wins"></span></div>
+        <div class="col py-3 px-lg-5 border bg-light">Losses : <span id="losses"></span></div>
     </div>
 </div>
 
@@ -61,8 +63,8 @@
         </div>
         <div class="container px-lg-5">
             <div class="row mx-lg-n5">
-                <div id="targetNum" class="col py-3 px-lg-5 border bg-light">Target Number : </div>
-                <div id="playerTotal" class="col py-3 px-lg-5 border bg-light">Your Total : </div>
+                <div class="col py-3 px-lg-5 border bg-light">Target Number :  <span id="computerGuess"></span></div>
+                <div class="col py-3 px-lg-5 border bg-light">Your Total : <span id= "yourGuess"></span> </div>
             </div>
         </div>
     </div>
@@ -70,9 +72,12 @@
 </div>        
              
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src ="assets/game.js"></script>
+
+
 
 
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src ="assets/game.js"></script>
+
 </html>

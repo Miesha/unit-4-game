@@ -3,70 +3,137 @@ $(document).ready(function(){
 })
 
 
-var computerGuess; 
+var computerGuess = 0; 
 var gem1;
 var gem2;
 var gem3;
 var gem4;
-var wins
-var losses
-var totalScore
+var wins = 0;
+var losses = 0;
+var totalScore =[];
 
-computerGuess=(Math.floor(Math.random() * ((120 - 19) + 1)) + 19)
+
+document.getElementById("wins").innerHTML = wins;
+    console.log(wins)
+
+document.getElementById("losses").innerHTML = losses;
+    console.log(losses)
+
+var computerGuess=(Math.floor(Math.random() * ((120 - 19) + 1)) + 19)
 console.log("computerGuess : " +  computerGuess)
 
-gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 5)
-console.log("gem1 : " + gem1)
+    document.getElementById("computerGuess").innerHTML = computerGuess;
+    console.log(computerGuess)
 
-gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 4)
-console.log("gem2 : " + gem2)
 
-gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 2)
-console.log("gem3 : " + gem3)
 
-gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
-console.log("gem4 : " + gem4)
+// gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 5)
+// console.log("gem1 : " + gem1)
+
+// gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 4)
+// console.log("gem2 : " + gem2)
+
+// gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 2)
+// console.log("gem3 : " + gem3)
+
+// gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
+// console.log("gem4 : " + gem4)
+
+    
+
+
+
+
 
 
 $('#gem1').on('click', function(){
-    console.log('gem1: '+ gem1);
+
+    gem1=(Math.floor(Math.random() * ((30 - 5) + 1)) + 5)
+        console.log("gem1 : " + gem1)
+    
+    totalScore.push(gem1)
+        // console.log (totalScore + "this is the new score")
+  
 
 })
 
 $('#gem2').on('click', function(){
-    console.log('gem2: '+ gem2);
 
+    gem2=(Math.floor(Math.random() * ((15 - 4) + 1)) + 4)
+        console.log("gem2 : " + gem2)
+
+    totalScore.push(gem2)
+        // console.log (totalScore + "this is the new score")
 })
 
 $('#gem3').on('click', function(){
-    console.log('gem3: '+ gem3);
 
+    gem3=(Math.floor(Math.random() * ((20 - 2) + 1)) + 2)
+        console.log("gem3 : " + gem3)
+
+    totalScore.push(gem3)
+        // console.log (totalScore + "this is the new score")
+  
 })
 
 $('#gem4').on('click', function(){
-    console.log('gem4: '+ gem4);
+
+    gem4=(Math.floor(Math.random() * ((10 - 1) + 1)) + 1)
+        console.log("gem4 : " + gem4)
+    totalScore.push(gem4)
+        // console.log (totalScore + "this is the new score")
+
+        var crystalTotal = [...totalScore];
+        console.log(crystalTotal + "cs")
+          
 
 })
 
+$('#gems').on("click", function(){
+    // console.log("ts" + totalScore)
+   var numbers = [...totalScore]
+   var sum = 0;
+   for (var i = 0; i < numbers.length; i++){
+    sum += numbers[i]
+    console.log("please work:" + sum)
 
-function addgems (val) {
-
-}
-
+    
+   }
 
 
+     
+    
+    
+})
+// var numbers = [10, 20, 30, 40] // sums to 100
+// var sum = 0;
+// for (var i = 0; i < numbers.length; i++) {
+//   sum += numbers[i]
+// }
+ 
+// myVar = doStuff(5);  
+// console.log(myVar); // logs 27.5
 
-
-// var gem1 = document.getElementById("gem1");
-
-    // $(".btn btn-primary").click(function(){
-    //     $(this).val(gem1)
-    //     console.log("button: " + gem1)
-    // })
-
+// function doStuff(int) {  
+//   var myNumber = int;
+//   var halfNumber = myNumber / 2
+//   myNumber = halfNumber + myNumber * 3;
+//   myNumber += 10;
+//   return myNumber;
+// }
 
 
     
+ 
+
+
+
+// var total = 0;
+//     for (var i = 0; i < totalScore.length; i++) {
+//     total += totalScore[i] << 0;
+//     console.log("total :"  + total)
+
+// }
 
 
 //  done Random generated cpu number
@@ -78,10 +145,20 @@ function addgems (val) {
 //  done console log 
 //  done link to image
 
-// on click add 
-//Add crystal numbers to total score
-//console log 
+// done on click add 
+// done Add crystal numbers to total score
+// done console log 
 // display total score
+   // i need a function 
+            // function
+   // in that function i want 
+            // function addCrystal (val){ }
+   //crystal totals to equal a click event 
+           // val crystal = 
+   // each time this click even happens
+//    // the crystal totals score should add the value of the crystal clicked. 
+
+ 
 
 
 // if crystal number matches cpu number 
