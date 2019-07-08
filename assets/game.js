@@ -110,23 +110,37 @@ $('#gems').on("click", function(){
     document.getElementById("yourGuess").innerHTML = sum;
 
     if (sum === computerGuess ) {
-        alert( "Your total is " + sum + ". You successully completed the crystal challenge!");
+        
         wins++;
         document.getElementById("wins").innerHTML = wins;
-            console.log("wins:" + wins);
+        document.getElementById("yourGuess").innerHTML = sum;
+        setTimeout(function(){ 
+            alert("Your total is " + sum + ". You successully completed the crystal challenge!"); 
             reset();
-    }
+            }, 100);
+            console.log("wins:" + wins);
+       
+        
+        }
+           
+    
 
     else if (sum > computerGuess) {
         
-        alert( "Sorry " + sum + " is more than " + computerGuess + ". You have failed this challenge, try again.")
+        
         losses++;
-        document.getElementById("losses").innerHTML = losses;         
-            console.log("losses  : " + losses);
+        document.getElementById("losses").innerHTML = losses; 
+        document.getElementById("yourGuess").innerHTML = sum;
+        setTimeout(function(){
+            alert( "Sorry " + sum + " is more than " + computerGuess + ". You have failed this challenge, try again."); 
             reset();
+            }, 100);       
+            console.log("losses  : " + losses);
+        
+        }   
 
      
-   }
+   
     
 }
 })

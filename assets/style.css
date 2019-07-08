@@ -5,8 +5,9 @@ img {
 
 } 
 
-#body_look {
-    background-color: blueviolet;
+#bodyLook {
+    background-color: plum;
+    
 }
 
 #main_content {
@@ -15,6 +16,7 @@ margin-left: 20%;
 }
 
 .card-body {
-    background-color: darksalmon;
+    background-color: blueviolet;
+
 }
 
